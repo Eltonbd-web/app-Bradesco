@@ -1,0 +1,108 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+
+}
+body {
+    padding: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    height: 700px;
+    background-image: linear-gradient(135deg, purple, red);
+    background-repeat: no-repeat;
+    
+}
+
+
+span.material-symbols-outlined {
+    font-size: 30px;
+}
+
+/*nav {
+    padding: 15px;
+    
+}*/
+
+#notificacao {
+    float:inline-end;
+}
+
+#logo {
+    padding-top: 20px;
+    height: 30%;
+}
+
+img {
+    width: 200px;
+    height: 60px;
+}
+#nome {
+    line-height: 30px;
+    height: 30%;
+}
+
+#identific {
+    font-size: large;
+    display: inline;
+}
+
+#seta {
+    float: inline-end;
+
+
+}
+
+
+button {
+    font-size: 17px;
+    color: red;
+    border-style: none;
+    
+    
+}
+
+#entrar {
+    
+    width: 100%;
+    display: block;
+    padding: 15px;
+    border-radius: 50px;
+}
+
+#outra {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    
+}
+
+ul {
+    margin: 0;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    
+}
+#centro {
+    border-left: solid 1px  white;
+    border-right:  solid 1px  white ;
+}
+
+li {
+    width: 30%;
+    padding: 15px;
+    text-align: center;
+
+}
+
+.nav2 {
+    display: block;
+    padding: 10px;
+}
+
