@@ -3,27 +3,36 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white;
+    
+    
 
 }
 body {
+    position: relative;
     padding: 15px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif ;
-    height: 700px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    height: 100vh;
+    max-height: 100vh;
+    min-height: 100vh;
     background-image: linear-gradient(135deg, purple, red);
     background-repeat: no-repeat;
+    
+}
+section {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    height: 100vh;
     
 }
 
 
 span.material-symbols-outlined {
-    font-size: 30px;
+    font-size: 5vh;
 }
 
-/*nav {
-    padding: 15px;
-    
-}*/
+
 
 #notificacao {
     float:inline-end;
@@ -31,7 +40,43 @@ span.material-symbols-outlined {
 
 #logo {
     padding-top: 20px;
-    height: 30%;
+    height: 30vh;
+}
+menu {
+    position:absolute;
+    display: none;
+    color: black;
+    background-color: white;
+    margin: -15px;
+    margin-right: 50px;
+    height: 100%;
+    width: 80%;
+    overflow: auto;
+    
+    
+}
+
+menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+menu ul li {
+    display: flex;
+    vertical-align:top;
+    font-size: 20px; 
+    text-align: left;
+    width: 100%;
+
+}
+
+
+
+
+menu span {
+    font-size: 20px;
+    padding-right: 15px;
+    color:purple;
 }
 
 img {
@@ -76,6 +121,7 @@ button {
     width: 100%;
     text-align: center;
     padding: 15px;
+    color: white;
     
 }
 
@@ -95,6 +141,7 @@ ul {
 }
 
 li {
+    text-align: center;
     width: 30%;
     padding: 15px;
     text-align: center;

@@ -8,73 +8,117 @@
     <title>App Bradesco - Tela Login</title>
 </head>
 <body>
-    
-    <nav> 
-        <span class="material-symbols-outlined">
-            menu
-        </span>
 
-        <span id="notificacao" class="material-symbols-outlined">
-            notifications
-        </span>
-    </nav>
-    <div id="logo">
-        <img src="imagens/logoBradesco.png" alt="logo Bradesco">
-    </div>
-    <!--
+
+    <menu id="abrirMenu">
         <ul>
-            <li>Voltar</li>
-            <li>PIX</li>
-            <li>Minhas Mensagens</li>
-            <li>Acesso à Conta</li>
-            <li>Chave de Segurança</li>
-            <li>Pergunte pra BIA</li>
-            <li>Abrir nova Conta</li>
-            <li>Depósito de Cheques</li>
-            <li>ATENDIMENTO</li>
-            <li>Ligar para o Fone Fácil</li>
-            <li>Rede de Atendimento</li>
-            <li>Fale Conosco / Ouvidoria</li>
-
-        </ul>
-    -->
-
-
-    <div id="nome">
-        <div>
-            <p id="identific">Nome</p>
-            <span id= "seta" class="material-symbols-outlined">
-                stat_minus_1
-                </span>
-        </div>
-        <div>
-            <p>Agência ****   Conta *****</p>
-        </div>
-
-
-
-
-    </div>
-    <div id="botoes">
-        <button id="entrar">Entrar</button>
-        <a id="outra" href="#">Acessar outra conta</a>
-
-    
-    <nav class="footer">
-        <ul>
-            <li><span  clas= "nav2" class="material-symbols-outlined">
-                lock
-                </span><p>Chave de Segurança </p></li>
-            <li id="centro"><span clas= "nav2"class="material-symbols-outlined">
-                sms
-                </span><p>Bia</p></li>
-            <li><span clas= "nav2" class="material-symbols-outlined">
+            <li onclick="fechar()"><span class="material-symbols-outlined">
+                arrow_back_ios
+                </span>Voltar</li>
+            <li><span  class="material-symbols-outlined">
                 send_money
-                </span><p>Pix</p></li>
-
-
+                </span>PIX</li>
+            <li><span  class="material-symbols-outlined">
+                notifications
+            </span>Minhas Mensagens</li>
+            <li><span class="material-symbols-outlined">
+                login
+                </span>Acesso à Conta</li>
+            <li><span   class="material-symbols-outlined">
+                lock
+                </span>Chave de Segurança</li>
+            <li><span class="material-symbols-outlined">
+                sms
+                </span>Pergunte pra BIA</li>
+            <li><span class="material-symbols-outlined">
+                group_add
+                </span>Abrir nova Conta</li>
+            <li><span class="material-symbols-outlined">
+                local_atm
+                </span>Depósito de Cheques</li>
+            <li>ATENDIMENTO</li>
+            <li><span class="material-symbols-outlined">
+                phone_in_talk
+                </span>Ligar para o Fone Fácil</li>
+            <li><span class="material-symbols-outlined">
+                location_on
+                </span>Rede de Atendimento</li>
+            <li><span class="material-symbols-outlined">
+                call
+                </span>Fale Conosco / Ouvidoria</li>
+            <li><span class="material-symbols-outlined">
+                kid_star
+                </span>Avalie nossoApp</li>
+            <li><span class="material-symbols-outlined">
+                mobile_friendly
+                </span>Sobre o App</li>
         </ul>
-    </nav>
+    </menu>
+
+    <section>
+        <nav> 
+            <span  onclick ="abrir()" class="material-symbols-outlined">
+                menu
+            </span>
+
+            <span id="notificacao" class="material-symbols-outlined">
+                notifications
+            </span>
+        </nav>
+        <div id="logo">
+            <img src="imagens/logoBradesco.png" alt="logo Bradesco">
+        </div>
+        
+        <div id="nome">
+            <div>
+                <p id="identific">Nome</p>
+                <span id= "seta" class="material-symbols-outlined">
+                    stat_minus_1
+                    </span>
+            </div>
+            <div>
+                <p>Agência ****   Conta *****</p>
+            </div>
+
+
+
+
+        </div>
+        <div id="botoes">
+            <button id="entrar">Entrar</button>
+            <a id="outra" href="#">Acessar outra conta</a>
+
+        
+        <nav class="footer">
+            <ul>
+                <li><span  clas= "nav2" class="material-symbols-outlined">
+                    lock
+                    </span><p>Chave de Segurança </p></li>
+                <li id="centro"><span clas= "nav2"class="material-symbols-outlined">
+                    sms
+                    </span><p>Bia</p></li>
+                <li><span clas= "nav2" class="material-symbols-outlined">
+                    send_money
+                    </span><p>Pix</p></li>
+
+
+            </ul>
+        </nav>
+    </section>
+
+    <script>
+        function abrir() {
+            document.getElementById("abrirMenu").style.display = "block";
+        }
+
+        function fechar(){
+           let x =  document.getElementById("abrirMenu");
+           x.style.display = "none";
+
+        }
+
+
+    </script>
     
 </body>
 </html>
