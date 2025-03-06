@@ -16,16 +16,10 @@ body {
     min-height: 100vh;
     background-image: linear-gradient(135deg, purple, red);
     background-repeat: no-repeat;
-    
-}
-section {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     color: white;
-    height: 100vh;
     
 }
+
 
 
 span.material-symbols-outlined {
@@ -129,25 +123,27 @@ button {
 }
 
 ul {
-    margin: 0;
+    margin-top: 10px;
     height: 30%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style-type: none;
     
 }
 #centro {
     border-left: solid 1px  white;
     border-right:  solid 1px  white ;
+    margin: 0, 30px;
 }
 
 li {
     text-align: center;
     width: 30%;
-    padding: 15px;
+    padding: 10px;
     text-align: center;
+    
 
 }
 
