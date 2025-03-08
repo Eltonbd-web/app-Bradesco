@@ -9,9 +9,8 @@
 </head>
 <body>
 
-
     <menu id="abrirMenu">
-        <ul>
+        <ul id="mudar">
             <li onclick="fechar()"><span class="material-symbols-outlined">
                 arrow_back_ios
                 </span>Voltar</li>
@@ -55,7 +54,6 @@
         </ul>
     </menu>
 
-    
     <nav> 
         <span  onclick ="abrir()" class="material-symbols-outlined">
             menu
@@ -65,6 +63,7 @@
             notifications
         </span>
     </nav>
+
     <div id="logo">
         <img src="imagens/logoBradesco.png" alt="logo Bradesco">
     </div>
@@ -80,14 +79,11 @@
             <p>Agência ****   Conta *****</p>
         </div>
 
-
-
-
     </div>
     <div id="botoes">
         <button id="entrar">Entrar</button>
         <a id="outra" href="#">Acessar outra conta</a>
-
+    </div>
     
     <nav class="footer">
         <ul>
@@ -100,20 +96,21 @@
             <li><span clas= "nav2" class="material-symbols-outlined">
                 send_money
                 </span><p>Pix</p></li>
-
-
         </ul>
     </nav>
     
 
     <script>
+        let y = document.getElementById("mudar");
+        let x =document.getElementById("abrirMenu");
         function abrir() {
-            document.getElementById("abrirMenu").style.display = "block";
+            x.style.width = "80vw";
+            y.style.transform = "translate(315px)";
         }
 
         function fechar(){
-           let x =  document.getElementById("abrirMenu");
-           x.style.display = "none";
+           x.style.width = "0";
+           y.style.transform = "translate(-300px)";
 
         }
 
