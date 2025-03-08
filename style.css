@@ -52,17 +52,20 @@ menu ul {
     transition: transform 1s ease;
 }
 
-menu ul li {
+menu ul li, a {
+    align-items: center;
     display: flex;
-    vertical-align:top;
+    vertical-align: top;
     font-size: 15px; 
     text-align: left;
     width: 100%;
-}
+    color: black;
+    text-decoration: none;
+    
 
+}
 menu li {
-    align-items: center;
-    white-space: nowrap;
+    padding: 10px;
 }
 
 menu span {
@@ -84,6 +87,9 @@ img {
 #identific {
     font-size: large;
     display: inline;
+}
+#ag_cc{
+    text-align: start;
 }
 
 #seta {
@@ -112,31 +118,38 @@ button {
     color: white;
 }
 
-ul {
-    margin-top: 10px;
-    height: 30%;
+.conteudo_nav2 {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    list-style-type: none;
-}
-
-#centro {
-    border-left: solid 1px  white;
-    border-right:  solid 1px  white ;
-    margin: 0, 30px;
-}
-
-li {
-    text-align: center;
-    width: 30%;
-    padding: 10px;
-    text-align: center;
+    
+    
+    
 }
 
 .nav2 {
-    display: block;
-    padding: 10px;
+    display: flex;
+    width: 33%;
+    
+    
 }
+.nav2 a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none; 
+    align-items: center;
+    justify-items: center;
+}
+
+.nav2 a, p {
+    text-align: center;
+    align-items: center;
+    color: white;
+    padding: 5px;
+}
+
+#centro {
+    border-left: solid;
+    border-right: solid;
+}
+
+
 
