@@ -6,6 +6,7 @@
 }
 
 body {
+    overflow: hidden;
     position: relative;
     padding: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
@@ -149,6 +150,65 @@ button {
 #centro {
     border-left: solid;
     border-right: solid;
+}
+
+/*parte da seleção de conta*/
+#selecao_conta {
+    
+    width: 100%;
+    border-radius: 20px 20px 0px 0px ;
+    bottom: 0;
+    margin: -15px;
+    padding: 15px;
+    position: absolute;
+    background-color: white;
+    overflow: hidden;
+    transition: height 1s ease;
+    
+    
+}
+
+
+#selecao_conta p {
+    text-align: start;
+    color:black;
+}
+#seta2 {
+
+    margin-bottom: 20px;
+    
+    width: 100%;
+    position: top;
+    color: blue;
+    text-align: center;
+    
+    
+}
+
+
+#nome_conta_seta {
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30vh;
+    
+    
+
+    
+}
+#seta3 {
+    
+    color: blue;
+}
+
+#outra_conta {
+    width: 100%;
+    padding: 15px;
+    border-radius: 50px;
+    margin-bottom: 10vh;
+    background-color: purple;
+    color: white;
 }
 
 

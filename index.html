@@ -91,6 +91,34 @@
     <div id="logo">
         <img src="imagens/logoBradesco.png" alt="logo Bradesco">
     </div>
+
+    <!--seleção de conta-->
+    <div id="selecao_conta" >    
+        <span id= "seta2" class="material-symbols-outlined">
+        stat_minus_1
+        </span>
+    
+        <p>Qual conta você quer acessar?</p>
+        <div id="nome_conta_seta">
+            <div id="nome_conta">
+                <p id="identific2">Nome</p>
+                <p id="ag_cc2">Agência ****   Conta *****</p>
+            </div>
+            <span id="seta3" class="material-symbols-outlined">
+            keyboard_double_arrow_left
+            </span>
+            <span id="seta3" class="material-symbols-outlined">
+                keyboard_double_arrow_right
+                </span>
+            <span style="color: blue;">Editar</span>
+            <span style="color:blue" class="material-symbols-outlined">
+                delete
+                </span>
+
+        </div>
+
+        <button id="outra_conta">Acessar outra conta</button>
+    </div>
     
     <div id="nome">
         <div>
@@ -133,11 +161,18 @@
             </li>
         </ul>
     </nav>
+
+   
     
 
     <script>
+        let a = document.getElementById("seta2");
+        let z = document.getElementById("seta");
         let y = document.getElementById("mudar");
-        let x =document.getElementById("abrirMenu");
+        let x = document.getElementById("abrirMenu");
+        a.addEventListener("click", esconderConta);
+        z.addEventListener("click", escolherConta);
+
         function abrir() {
             x.style.width = "80vw";
             y.style.transform = "translate(315px)";
@@ -148,6 +183,14 @@
            y.style.transform = "translate(-300px)";
 
         }
+        function escolherConta(){
+            document.getElementById("selecao_conta").style.removeProperty("height");
+        }
+
+        function esconderConta(){
+            document.getElementById("selecao_conta").style.height = "0";
+        }
+        
 
 
     </script>
